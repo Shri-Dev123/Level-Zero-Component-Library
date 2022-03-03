@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:ital,wght@1,500&display=swap");
+
+:root {
+  --primary-color: #c026d3;
+  --secondary-color: #22d3ee;
+}
+body {
+  font-family: "open sans", sans-serif;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+.link {
+  text-decoration: none;
+}
+.primary-link {
+  color: var(--primary-color);
+}

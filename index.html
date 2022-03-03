@@ -6,7 +6,7 @@
     <title>Shrikant's Component Library</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="./stylesheet.css" rel="stylesheet/css"></script>
+    <link href="./stylesheet.css" rel="stylesheet" />
   </head>
   <body>
     <h1>Shrikant's Component Library</h1>
@@ -26,20 +26,20 @@
     <hr />
     <h2>@Container</h2>
     <h3>fluid Container</h3>
-    <p>
+    <div class="container">
       This is going to be a fluid container. it will go full width of page. with
       some margin.
-    </p>
+    </div>
     <h3>center Container</h3>
-    <p>
+    <div class="container container-center">
       This is going to be a centered container. it will go till a given width
       and center content.
-    </p>
+    </div>
     <hr />
 
     <h2>@Links</h2>
-    <a href="https://www.google.com/">Primary link</a>
-    <a href="https://www.google.com/">Secondary link</a>
+    <a class="link primary-link" href="https://www.google.com/">Primary link</a>
+    <a class="link" href="https://www.google.com/">Secondary link</a>
     <hr />
     <h2>@Lists</h2>
     <h3>Unordered Lists</h3>
@@ -100,6 +100,7 @@
       <p>This will have grey background</p>
     </section>
     <hr />
+    <h2>@footer</h2>
     <footer>
       <div>some small header inside footer</div>
       <ul>
