@@ -39,7 +39,9 @@
 
     <h2>@Links</h2>
     <a class="link primary-link" href="https://www.google.com/">Primary link</a>
-    <a class="link" href="https://www.google.com/">Secondary link</a>
+    <a class="link secondary-link" href="https://www.google.com/"
+      >Secondary link</a
+    >
     <hr />
     <h2>@Lists</h2>
     <h3>Unordered Lists</h3>
@@ -47,7 +49,7 @@
       We don't want to show bullets in the unordered lists. we will remove that
       with css.
     </p>
-    <ul>
+    <ul class="non-bullets">
       <li>Item one</li>
       <li>item two</li>
       <li>item three</li>
@@ -57,56 +59,80 @@
       Instead of going in a new row, we will create a new list which will take
       columns
     </p>
-    <ul>
-      <li>Item one</li>
-      <li>item two</li>
-      <li>item three</li>
+    <ul class="non-bullets">
+      <li class="list-items-inline">Item one</li>
+      <li class="list-items-inline">item two</li>
+      <li class="list-items-inline">item three</li>
     </ul>
     <h3>Reverse ordered Lists</h3>
     <p>
       Counting will go reverse for this list
     </p>
 
-    <ol>
+    <ol reversed>
       <li>Item one</li>
       <li>item two</li>
       <li>item three</li>
     </ol>
     <hr />
     <h3>@Nav</h3>
-    <p>I am brand</p>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">products</a></li>
-        <li><a href="/">About</a></li>
+    <nav class="navigation container">
+      <div class="nav-brand">I am brand</div>
+      <ul class="non-bullets nav-pills">
+        <li class="list-items-inline">
+          <a class="link link-active" href="/">Home</a>
+        </li>
+        <li class="list-items-inline"><a class="link" href="/">products</a></li>
+        <li class="list-items-inline"><a class="link" href="/">About</a></li>
       </ul>
     </nav>
     <hr />
     <h2>header</h2>
-    <header>
-      <img src="./assets/Header_img.png" />
-      <h1>heading inside header</h1>
+    <header class="hero">
+      <img class="hero-img" src="./assets/Header_img.png" />
+      <h1 class="hero-heading">heading inside header</h1>
     </header>
     <hr />
     <h2>@Section</h2>
-    <section>
-      <h3>White Section</h3>
-      <p>This will have white background</p>
+    <section class="section">
+      <div class="container container-center">
+        <h3>White Section</h3>
+        <p>
+          The following figure shows that the informat COMMA5. instructs the
+          program to read five characters of data (the comma counts as part of
+          the length of the data), to remove the comma from the data, and to
+          write the resulting numeric value to the program data vector. Note
+          that the name of an informat always ends in a period
+        </p>
+      </div>
     </section>
 
-    <section>
-      <h3>Off-White Section</h3>
-      <p>This will have grey background</p>
+    <section class="section ow">
+      <div class="container container-center">
+        <h3>Off-White Section</h3>
+        <p>
+          The following figure shows that the informat COMMA5. instructs the
+          program to read five characters of data (the comma counts as part of
+          the length of the data), to remove the comma from the data, and to
+          write the resulting numeric value to the program data vector. Note
+          that the name of an informat always ends in a period
+        </p>
+      </div>
     </section>
     <hr />
     <h2>@footer</h2>
-    <footer>
-      <div>some small header inside footer</div>
-      <ul>
-        <li>Social-one</li>
-        <li>Social-two</li>
-        <li>Social-Three</li>
+    <footer class="footer">
+      <div class="footer-header">some small header inside footer</div>
+      <ul class="social links non-bullets">
+        <li class="list-items-inline">
+          <a class="link" href="/">Social-one</a>
+        </li>
+        <li class="list-items-inline">
+          <a class="link" href="/">Social-two</a>
+        </li>
+        <li class="list-items-inline">
+          <a class="link" href="/">Social-three</a>
+        </li>
       </ul>
     </footer>
   </body>
