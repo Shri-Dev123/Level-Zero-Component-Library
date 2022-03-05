@@ -8,6 +8,7 @@
 }
 body {
   font-family: "open sans", sans-serif;
+  margin: 0px;
 }
 .container {
   padding-left: 1rem;
