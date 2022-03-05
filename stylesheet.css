@@ -68,6 +68,8 @@ hr {
 }
 .hero {
   padding: 2rem;
+  min-height: 20.8rem;
+  position: relative;
 }
 
 .hero .hero-img {
@@ -76,8 +78,13 @@ hr {
   margin: auto;
 }
 .hero .hero-heading {
-  text-align: center;
   color: var(--grey-color);
+  position: absolute;
+  bottom: 52.5px;
+  width: calc(100% - 4rem);
+}
+.hero-heading h1 {
+  text-align: center;
 }
 .section {
   padding: 2rem;
@@ -100,4 +107,14 @@ hr {
 }
 .footer ul {
   padding-inline-start: 0px;
+}
+.footer .footer-header {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #f26d21;
+}
+@media screen and (max-width: 425px) {
+  .hero .hero-img {
+    width: 80vw;
+  }
 }
